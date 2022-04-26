@@ -31,14 +31,23 @@ const Marketplace: React.FC = () => {
     <DesContainer>
       <Stat
         candyShop={candyShopRef.current}
-        title={'Marketplace'}
-        description={'Candy Shop is an open source on-chain protocol that empowers DAOs, NFT projects and anyone interested in creating an NFT marketplace to do so within minutes!'}
+        title={'Boom Box'}
+        description={'Mint your favorite tunes - pop, indie, dance, hip hop, country, trap and more!'}
         style={{ paddingBottom: 50 }}
       />
       <Orders
         wallet={wallet}
         candyShop={candyShopRef.current}
         walletConnectComponent={<WalletMultiButton />}
+        filters={[
+          // identifiers to be updated
+          {name: 'Pop', identifier: -38328789 },
+          {name: 'Indie', identifier: 1 },
+          {name: 'Dance', identifier: 1 },
+          {name: 'Hip Hop', identifier: 1 },
+          {name: 'Country', identifier: 1 },
+          {name: 'Trap', identifier: 1 },
+        ]}
       />
     </DesContainer>
   )

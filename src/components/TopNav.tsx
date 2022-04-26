@@ -59,10 +59,7 @@ const TopNav: React.FC<TopNavProps> = ({
       </Logo>
       <Menu>
         <li>
-          <Link to='/'>Home</Link>
-        </li>
-        <li>
-          <Link to='/marketplace'>Marketplace</Link>
+          <Link to='/'>Marketplace</Link>
         </li>
         <li>
           <Link to='/sell'>Sell</Link>
